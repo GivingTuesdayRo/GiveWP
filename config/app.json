@@ -1,0 +1,16 @@
+{
+  "assets": {
+    "app": [
+      "./resources/assets/scripts/main.js",
+      "./resources/assets/sass/main.scss"
+    ]
+  },
+
+  "settings": {
+    "browserSync": {
+      "host": "localhost",
+      "port": 3000,
+      "proxy": "http://localhost:8080/"
+    }
+  }
+}
