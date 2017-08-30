@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7bff5092-37ba-4f98-b997-1e2ab9d30b24" name="Live" url="http://ftp.givingtuesday.ro">
+        <fileTransfer host="ftp.givingtuesday.ro" port="22" rootFolder="/home/givingtuesday/public_html/wp-content/themes/givingtuesday" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
