@@ -22,6 +22,7 @@ function register_navigation_areas()
     register_nav_menus([
         'top-navigation' => esc_html__('Top Navigation', 'givingtuesday'),
         'primary' => esc_html__('Primary Navigation', 'givingtuesday'),
+        'footer' => esc_html__('Footer Navigation', 'givingtuesday'),
     ]);
 }
 

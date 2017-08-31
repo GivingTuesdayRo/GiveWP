@@ -5551,3 +5551,185 @@ a.text-dark:focus, a.text-dark:hover {
 
 .invisible {
   visibility: hidden !important; }
+
+footer#colophon {
+  padding: 26px 0;
+  background: #03164a;
+  position: relative; }
+
+footer#colophon .widget .widget-title {
+  color: #f9d214;
+  font-size: 18px;
+  margin-top: 0; }
+
+footer#colophon .widget .menu {
+  margin: 0;
+  padding: 0;
+  list-style: none outside; }
+
+footer#colophon .widget .menu .menu-item a {
+  display: block;
+  position: relative;
+  padding: 6px 0;
+  border-bottom: 1px solid #303d61;
+  color: #b1b1b1;
+  font-size: 12px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+footer#colophon .widget .menu .menu-item a::after {
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  margin-top: 16px;
+  transform: scale(0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  background: #ce1223;
+  content: '';
+  transform-origin: right top; }
+
+footer#colophon .widget .menu .menu-item a:hover {
+  color: #ce1223; }
+
+footer#colophon .widget .menu .menu-item a:hover::after {
+  transform: scale(1, 1);
+  transform-origin: left top; }
+
+footer#bottom-colophon {
+  background: #020f32;
+  padding-top: 12px;
+  padding-bottom: 8px; }
+
+footer#bottom-colophon a:hover {
+  text-decoration: none;
+  color: #e93348 !important; }
+
+footer#bottom-colophon .links nav {
+  display: inline-block; }
+
+footer#bottom-colophon .links ul {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+  display: inline-block; }
+
+footer#bottom-colophon .links li {
+  display: inline-block;
+  color: #fff;
+  font-size: 13px; }
+
+footer#bottom-colophon .links li:after {
+  content: "|";
+  margin: 0 12px; }
+
+footer#bottom-colophon .links a {
+  color: #fff; }
+
+footer#bottom-colophon .links p {
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 0; }
+
+footer#bottom-colophon .design-by {
+  text-align: right;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300; }
+
+footer#bottom-colophon .design-by a {
+  color: #fff; }
+
+.comment-content:after, .comment-content:before, .entry-content:after, .entry-content:before, .site-content:after, .site-content:before, .site-footer:after, .site-footer:before, .site-header:after, .site-header:before {
+  content: "";
+  display: table;
+  table-layout: fixed; }
+
+.entry-content, .entry-summary, .page-content {
+  margin: 1.5em 0 0; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
+
+body .entry-content {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+body .entry-content {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+body .entry-content .btn {
+  margin-bottom: 15px; }
+
+body p, body ul li {
+  font-size: 18px;
+  line-height: 28px; }
+
+body.single .entry-content h2 {
+  line-height: 42px; }
+
+body.single .entry-content p {
+  font-size: 22px;
+  line-height: 32px; }
+
+@media only screen and (max-width: 768px) {
+  body.single .entry-content h2 {
+    line-height: 32px; }
+  body.single .entry-content p {
+    font-size: 18px;
+    line-height: 21px; } }
+
+.bypostauthor {
+  display: block; }
+
+#banner-picture {
+  padding-bottom: 36%;
+  position: relative;
+  z-index: 1; }
+
+#banner-picture .banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.22); }
+
+#banner-picture .banner-overlay h1,
+#banner-picture .banner-overlay h2,
+#banner-picture .banner-overlay p {
+  position: absolute;
+  top: 50%;
+  font-size: 72px !important;
+  line-height: 78px;
+  font-weight: 600;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0 10%; }
+
+@media only screen and (max-width: 992px) {
+  #banner-picture {
+    padding-bottom: 50%; }
+  #banner-picture .banner-overlay h1,
+  #banner-picture .banner-overlay h2,
+  #banner-picture .banner-overlay p {
+    font-size: 45px !important;
+    line-height: 50px; } }
+
+@media only screen and (max-width: 768px) {
+  #banner-picture {
+    padding-bottom: 60%; }
+  #banner-picture .banner-overlay h1,
+  #banner-picture .banner-overlay h2,
+  #banner-picture .banner-overlay p {
+    font-size: 32px !important;
+    line-height: 35px; } }
