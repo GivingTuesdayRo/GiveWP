@@ -11,43 +11,27 @@
  * @package GivingTuesday
  */
 
-/**
- * Set up the WordPress core custom header feature.
- *
- * @uses givingtuesday_header_style()
- */
-function givingtuesday_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'givingtuesday_custom_header_args', [
-		'default-image'      => '',
-		'default-text-color' => '000000',
-		'width'              => 1000,
-		'height'             => 250,
-		'flex-height'        => true,
-		'wp-head-callback'   => 'givingtuesday_header_style',
-	] ) );
-}
 
-add_action( 'after_setup_theme', 'givingtuesday_custom_header_setup' );
+if (!function_exists('givingtuesday_header_style')) :
+    /**
+     * Styles the header image and text displayed on the blog.
+     *
+     * @see givingtuesday_custom_header_setup().
+     */
+    function givingtuesday_header_style()
+    {
+        $header_text_color = get_header_textcolor();
 
-if ( ! function_exists( 'givingtuesday_header_style' ) ) :
-	/**
-	 * Styles the header image and text displayed on the blog.
-	 *
-	 * @see givingtuesday_custom_header_setup().
-	 */
-	function givingtuesday_header_style() {
-		$header_text_color = get_header_textcolor();
+        /*
+         * If no custom options for text are set, let's bail.
+         * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
+         */
+        if (get_theme_support('custom-header', 'default-text-color') === $header_text_color) {
+            return;
+        }
 
-		/*
-		 * If no custom options for text are set, let's bail.
-		 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
-		 */
-		if ( get_theme_support( 'custom-header', 'default-text-color' ) === $header_text_color ) {
-			return;
-		}
-
-		// If we get this far, we have custom styles. Let's do this.
-		?>
+        // If we get this far, we have custom styles. Let's do this.
+        ?>
         <style type="text/css">
             <?php
 			// Has the text been hidden?
@@ -70,6 +54,6 @@ if ( ! function_exists( 'givingtuesday_header_style' ) ) :
 
             <?php endif; ?>
         </style>
-		<?php
-	}
+        <?php
+    }
 endif;

@@ -7,11 +7,11 @@
  * @package GivingTuesday
  */
 
-if (!is_active_sidebar('sidebar-1')) {
+if (!is_active_sidebar('sidebar-right')) {
     return;
 }
 ?>
 
-<aside id="secondary" class="widget-area">
-    <?php dynamic_sidebar('sidebar-1'); ?>
-</aside><!-- #secondary -->
+<div class="col-md-3 widget-area" id="right-sidebar" role="complementary">
+    <?php dynamic_sidebar('sidebar-right'); ?>
+</div><!-- #secondary -->
