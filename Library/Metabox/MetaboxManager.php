@@ -79,7 +79,7 @@ class MetaboxManager
         $metabox = $this->getMetaboxes()->get($arguments['id']);
         if ($metabox) {
             $fields = $metabox->getFields();
-            (new FieldsPersistence($post->ID, $fields))->populateValues();
+            (new FieldsPersistence($post->ID, $fields))->read();
             $view = new MetaboxDisplay($metabox, $post, $arguments);
             echo $view->render();
         }

@@ -36,7 +36,7 @@ class FieldsPersistence
         $this->data = $data;
     }
 
-    public function populateValues()
+    public function read()
     {
         $fields = $this->getFields();
         foreach ($fields as $field) {
