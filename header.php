@@ -24,10 +24,13 @@
         </a>
     <?php } ?>
 
-    <header id="masthead" class="site-header navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar">
+    <header id="masthead" class="site-header navbar navbar-expand navbar-light d-flex justify-content-end">
         <?php get_template_part('resources/templates/header/brand'); ?>
-        <?php get_template_part('resources/templates/header/top-navigation'); ?>
-        <?php get_template_part('resources/templates/header/main-navigation'); ?>
+        <div>
+
+            <?php get_template_part('resources/templates/header/top-navigation'); ?>
+            <?php get_template_part('resources/templates/header/main-navigation'); ?>
+        </div>
     </header><!-- #masthead -->
 
     <div id="content" class="site-content">

@@ -1,4 +1,4 @@
-<nav id="site-navigation" class="main-navigation">
+<nav id="main-navigation" class="main-navigation">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbarContainer"
             aria-controls="mainNavbarContainer" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -13,4 +13,4 @@
         'walker' => new \GivingTuesdayWp\Library\Nav\BootstrapWalker(),
     ]);
     ?>
-</nav><!-- #site-navigation -->
+</nav>
