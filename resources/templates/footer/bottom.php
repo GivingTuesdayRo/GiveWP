@@ -9,7 +9,6 @@
                         'menu_id' => 'menu-footer-menu',
                         'menu_class' => 'menu',
                         'container_class' => 'menu-footer-menu-container',
-//                        'walker' => new \GivingTuesdayWp\Theme\Library\Nav\BootstrapWalker(),
                     ]);
                     ?>
                 </nav><!-- #site-navigation -->

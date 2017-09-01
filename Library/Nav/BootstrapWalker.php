@@ -1,12 +1,12 @@
 <?php
 
-namespace GivingTuesdayWp\Theme\Library\Nav;
+namespace GivingTuesdayWp\Library\Nav;
 
 use Walker_Nav_Menu;
 
 /**
  * Class BootstrapWalker
- * @package GivingTuesdayWp\Theme\Library\Nav
+ * @package GivingTuesdayWp\Library\Nav
  *
  * Description: A custom WordPress nav walker class to implement the Bootstrap 4
  * navigation style in a custom theme using the WordPress built in menu manager.

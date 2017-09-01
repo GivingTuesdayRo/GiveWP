@@ -39,7 +39,7 @@ add_action('wp_enqueue_scripts', function () {
  * Registers editor stylesheets.
  */
 add_action('admin_init', function () {
-    add_editor_style(asset_path('css/app.css'));
+    add_editor_style(asset_path('styles/admin.css'));
 });
 
 /**

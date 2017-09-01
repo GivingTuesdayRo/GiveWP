@@ -6,7 +6,7 @@
                 'theme_location' => 'top-navigation',
                 'menu_id' => 'top-links-menu',
                 'menu_class' => 'navbar-nav',
-                'walker' => new \GivingTuesdayWp\Theme\Library\Nav\BootstrapWalker(),
+                'walker' => new \GivingTuesdayWp\Library\Nav\BootstrapWalker(),
             ]);
             ?>
         </div>

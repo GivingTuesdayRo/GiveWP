@@ -11,9 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php
-    if (has_post_thumbnail()) {
-        get_template_part('resources/templates/posts/header/banner');
-    } else {
+    if (!has_post_thumbnail()) {
         get_template_part('resources/templates/posts/header/title');
     }
     ?>
@@ -34,7 +32,7 @@
         ));
 
         wp_link_pages([
-            'before' => '<div class="page-links">' . esc_html__('Pages:', 'givingtuesday'),
+            'before' => '<div class="page-links">'.esc_html__('Pages:', 'givingtuesday'),
             'after' => '</div>',
         ]);
         ?>

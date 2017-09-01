@@ -10,7 +10,7 @@
         'menu_class' => 'navbar-nav',
         'container_class' => 'collapse navbar-collapse',
         'container_id' => 'mainNavbarContainer',
-        'walker' => new \GivingTuesdayWp\Theme\Library\Nav\BootstrapWalker(),
+        'walker' => new \GivingTuesdayWp\Library\Nav\BootstrapWalker(),
     ]);
     ?>
 </nav><!-- #site-navigation -->

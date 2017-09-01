@@ -1,13 +1,19 @@
 <?php
 
-require_once __DIR__ . '/../app/helpers.php';
+define('GIVEWP_THEME_DIR', dirname(__DIR__));
 
-require_once __DIR__ . '/../app/Http/assets.php';
+// REGISTER AUTOLOADER
+require_once GIVEWP_THEME_DIR.'/Library/Autoload/Autoload.php';
+$autoloader = new GivingTuesdayWp\Library\Autoload\Autoload();
 
-require_once __DIR__ . '/../app/Library/Nav/BootstrapWalker.php';
+require_once GIVEWP_THEME_DIR.'/app/helpers.php';
 
-require_once __DIR__ . '/../app/Setup/supports.php';
+require_once GIVEWP_THEME_DIR.'/app/Http/assets.php';
 
-require_once __DIR__ . '/../app/Structure/navs.php';
-require_once __DIR__ . '/../app/Structure/sidebars.php';
+//require_once GIVEWP_THEME_DIR.'/../Library/Nav/BootstrapWalker.php';
 
+require_once GIVEWP_THEME_DIR.'/app/Setup/supports.php';
+
+require_once GIVEWP_THEME_DIR.'/app/Structure/navs.php';
+require_once GIVEWP_THEME_DIR.'/app/Structure/sidebars.php';
+require_once GIVEWP_THEME_DIR.'/app/Structure/metaboxes.php';
