@@ -134,6 +134,28 @@ class MetaboxManager
     }
 
     /**
+     * @param $metabox
+     * @param $field
+     * @param null $default
+     * @return null
+     * @internal param $key
+     */
+    public function getFieldValue($metabox, $field, $default = null)
+    {
+        $metabox = $this->getMetaboxes()->get($metabox);
+        if ($metabox) {
+            $fields = $metabox->getFields();
+            (new FieldsPersistence(get_the_ID(), $fields))->read();
+            $field = $metabox->getFields()->get($field);
+            if ($field) {
+                return $field->getValue();
+            }
+        }
+
+        return $default;
+    }
+
+    /**
      * @param Metabox $metabox
      */
     protected function registerMetabox($metabox)

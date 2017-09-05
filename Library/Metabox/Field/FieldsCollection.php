@@ -11,11 +11,4 @@ use GivingTuesdayWp\Library\Metabox\Field\Fields\AbstractField;
  */
 class FieldsCollection extends AbstractCollection
 {
-    /**
-     * @param AbstractField $field
-     */
-    public function add($field)
-    {
-        $this->set($field->getId(), $field);
-    }
 }

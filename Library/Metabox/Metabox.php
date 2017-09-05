@@ -88,9 +88,11 @@ class Metabox
     public function addField($settings)
     {
         $field = FieldsBuilder::create($settings);
+        $id = $field->getName();
         $field->setName('givewp_'.$this->getId().'_'.$field->getName());
         $field->setId($field->getName());
-        $this->getFields()->add($field);
+        $this->getFields()->set($id, $field);
+
         return $field;
     }
 

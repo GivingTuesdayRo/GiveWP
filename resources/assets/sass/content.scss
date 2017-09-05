@@ -1,13 +1,3 @@
-.comment-content:after, .comment-content:before, .entry-content:after, .entry-content:before, .site-content:after, .site-content:before, .site-footer:after, .site-footer:before, .site-header:after, .site-header:before {
-  content: "";
-  display: table;
-  table-layout: fixed
-}
-
-.entry-content, .entry-summary, .page-content {
-  margin: 1.5em 0 0
-}
-
 .page-links {
   clear: both;
   margin: 0 0 1.5em
@@ -53,6 +43,10 @@ body.single .entry-content p {
 
 .bypostauthor {
   display: block
+}
+
+article .entry-header {
+  margin-bottom: 50px
 }
 
 #banner-picture {

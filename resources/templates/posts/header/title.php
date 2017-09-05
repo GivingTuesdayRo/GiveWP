@@ -1,11 +1,7 @@
 <?php
-$pageType = get_post_type();
-$pageId = get_the_ID();
-$metaName = 'givewp_'.$pageType.'_options_header_style';
-if (metadata_exists('post', $pageId, $metaName)) {
-    $value = get_post_meta($pageId, $metaName, true);
-}
-if ($value == 'hide') {
+use GivingTuesdayWp\Library\Metabox\MetaboxManager;
+$headerStyle = MetaboxManager::instance()->getFieldValue('page_options', 'header_style');
+if ($headerStyle == 'hide') {
     return;
 }
 ?>
