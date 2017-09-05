@@ -34,7 +34,7 @@ if (!function_exists('givingtuesday_setup')) :
          * If you're building a theme based on GivingTuesday, use a find and replace
          * to change 'givingtuesday' to the name of your theme in all the template files.
          */
-        load_theme_textdomain('givingtuesday', get_template_directory() . '/resources/languages');
+        load_theme_textdomain('givingtuesday', get_template_directory().'/resources/languages');
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
@@ -86,6 +86,13 @@ if (!function_exists('givingtuesday_setup')) :
             'flex-width' => true,
             'flex-height' => true,
         ]);
+
+        add_filter('get_custom_logo', function ($html) {
+            $html = str_replace('"custom-logo"', '"custom-logo img-fluid"', $html);
+
+            return $html;
+        });
     }
 endif;
+
 add_action('after_setup_theme', 'givingtuesday_setup');

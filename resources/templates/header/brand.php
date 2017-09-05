@@ -1,5 +1,5 @@
 <!-- Your site title as branding in the menu -->
-<div class="navbar-brand mr-auto">
+<div class="navbar-brand col col-md-3 mr-auto">
     <?php if (!has_custom_logo()) { ?>
         <?php if (is_front_page() && is_home()) { ?>
             <h1 class="navbar-brand mb-0">
