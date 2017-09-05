@@ -46,8 +46,8 @@ class Metabox
     protected $settings = [
         'id',
         'title',
-        'post_type',
-        'page_template',
+        'postType',
+        'pageTemplate',
         'context',
         'hide_custom_fields',
         'priority',

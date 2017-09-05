@@ -18,3 +18,19 @@ $metabox->addField([
     'regular' => 'Regular',
     'cover' => 'Cover'
 ]);
+
+$metabox = MetaboxManager::instance()->newMetabox([
+    'id' => 'page_options',
+    'title' => 'Page options',
+    'postType' => 'page',
+    'context' => 'side',
+]);
+$metabox->addField([
+    'name' => 'cover_style',
+    'label' => 'Cover Style',
+    'type' => 'radioGroup',
+    'value' => 'regular',
+])->setOptionsValues([
+    'regular' => 'Regular',
+    'cover' => 'Cover'
+]);
