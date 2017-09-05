@@ -1,3 +1,14 @@
+<?php
+$pageType = get_post_type();
+$pageId = get_the_ID();
+$metaName = 'givewp_'.$pageType.'_options_header_style';
+if (metadata_exists('post', $pageId, $metaName)) {
+    $value = get_post_meta($pageId, $metaName, true);
+}
+if ($value == 'hide') {
+    return;
+}
+?>
 <header class="entry-header">
     <div id="banner-picture" style="
             background: url(<?php the_post_thumbnail_url('large') ?>);

@@ -4,33 +4,49 @@ namespace GivingTuesdayWp\Theme\Structure;
 
 use GivingTuesdayWp\Library\Metabox\MetaboxManager;
 
-$metabox = MetaboxManager::instance()->newMetabox([
+MetaboxManager::instance()->newMetabox([
     'id' => 'post_options',
     'title' => 'Post options',
     'context' => 'side',
-]);
-$metabox->addField([
-    'name' => 'cover_style',
-    'label' => 'Cover Style',
-    'type' => 'radioGroup',
-    'value' => 'cover',
-])->setOptionsValues([
-    'regular' => 'Regular',
-    'cover' => 'Cover'
+    'fields' => [
+        [
+            'name' => 'cover_style',
+            'label' => 'Cover Style',
+            'type' => 'radioGroup',
+            'value' => 'cover',
+            'optionsValues' => [
+                'regular' => 'Regular',
+                'cover' => 'Cover'
+            ]
+        ]
+    ]
 ]);
 
-$metabox = MetaboxManager::instance()->newMetabox([
+MetaboxManager::instance()->newMetabox([
     'id' => 'page_options',
     'title' => 'Page options',
     'postType' => 'page',
     'context' => 'side',
-]);
-$metabox->addField([
-    'name' => 'cover_style',
-    'label' => 'Cover Style',
-    'type' => 'radioGroup',
-    'value' => 'regular',
-])->setOptionsValues([
-    'regular' => 'Regular',
-    'cover' => 'Cover'
+    'fields' => [
+        [
+            'name' => 'header_style',
+            'label' => 'Header Style',
+            'type' => 'radioGroup',
+            'value' => 'show',
+            'optionsValues' => [
+                'show' => 'Show header',
+                'hide' => 'Hide Header'
+            ]
+        ],
+        [
+            'name' => 'cover_style',
+            'label' => 'Cover Style',
+            'type' => 'radioGroup',
+            'value' => 'regular',
+            'optionsValues' => [
+                'regular' => 'Regular',
+                'cover' => 'Cover'
+            ]
+        ]
+    ]
 ]);

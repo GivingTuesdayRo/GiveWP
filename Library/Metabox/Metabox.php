@@ -62,6 +62,11 @@ class Metabox
     {
         $this->initSettings($settings);
         $this->fields = new FieldsCollection();
+        if (isset($settings['fields']) && is_array($settings['fields'])) {
+            foreach ($settings['fields'] as $field) {
+                $this->addField($field);
+            }
+        }
     }
 
     /**
