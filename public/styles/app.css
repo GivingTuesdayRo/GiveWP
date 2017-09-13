@@ -5787,3 +5787,9 @@ article .entry-header {
   content: "";
   display: table;
   table-layout: fixed; }
+
+.widget .widget-title {
+  font-size: 18px;
+  color: #e93348;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ffeeeb; }
