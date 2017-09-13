@@ -12,6 +12,12 @@
  * @package GivingTuesday
  */
 
+$pageType = get_post_type();
+$pageId   = get_the_ID();
+$metaName = 'givewp_' . $pageType . '_options_layout';
+if (metadata_exists('post', $pageId, $metaName)) {
+    $layout = get_post_meta($pageId, $metaName, true);
+}
 get_header(); ?>
     <div id="primary" class="content-area">
         <?php
@@ -19,7 +25,17 @@ get_header(); ?>
             get_template_part('resources/templates/posts/header/banner');
         }
         ?>
-        <?php get_template_part('resources/templates/layouts/right-sidebar'); ?>
+        <?php
+        switch ($layout) {
+            case 'right-sidebar':
+            case 'full-width':
+                $layoutTemplate = $layout;
+                break;
+            default:
+                $layoutTemplate = 'right-sidebar';
+        }
+        get_template_part('resources/templates/layouts/' . $layoutTemplate);
+        ?>
     </div><!-- #primary -->
 
 <?php

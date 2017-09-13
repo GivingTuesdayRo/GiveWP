@@ -47,6 +47,16 @@ MetaboxManager::instance()->newMetabox([
                 'regular' => 'Regular',
                 'cover' => 'Cover'
             ]
+        ],
+        [
+            'name' => 'layout',
+            'label' => 'Layout',
+            'type' => 'radioGroup',
+            'value' => 'right-sidebar',
+            'optionsValues' => [
+                'right-sidebar' => 'Right Sidebar',
+                'full-width' => 'Full Width'
+            ]
         ]
     ]
 ]);
