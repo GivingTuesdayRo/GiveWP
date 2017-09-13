@@ -1,7 +1,7 @@
 <footer id="bottom-colophon" class="site-footer" role="contentinfo">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 links">
+            <div class="col-sm-8 links">
                 <nav role="navigation">
                     <?php
                     wp_nav_menu([
@@ -18,7 +18,7 @@
                     Giving Tuesday Romania
                 </p>
             </div>
-            <div class="col-sm-6 design-by">
+            <div class="col-sm-4 design-by">
                 Crafted by
                 <a href="//gabrielsolomon.ro/" target="_blank">Gabriel Solomon</a>
             </div>
