@@ -5840,6 +5840,9 @@ body.single .entry-content p {
   margin-left: 15px;
   font-size: 18px; }
 
+.widget-area .widget {
+  margin-bottom: 25px; }
+
 .widget .widget-title {
   font-size: 18px;
   color: #e93348;
