@@ -5733,8 +5733,12 @@ body.single .entry-content p {
 .bypostauthor {
   display: block; }
 
-article .entry-header {
-  margin-bottom: 50px; }
+.entry-header {
+  margin-bottom: 35px; }
+
+.entry-header .entry-title {
+  color: #1c2751;
+  font-weight: 400; }
 
 #banner-picture {
   padding-bottom: 36%;
@@ -5787,6 +5791,54 @@ article .entry-header {
   content: "";
   display: table;
   table-layout: fixed; }
+
+.post-navigation {
+  margin: 15px 0 30px;
+  overflow: hidden; }
+
+.post-navigation .screen-reader-text {
+  display: none; }
+
+.comment-navigation .nav-previous,
+.post-navigation .nav-previous,
+.posts-navigation .nav-previous {
+  float: left;
+  width: 50%; }
+
+.comment-navigation .nav-next,
+.post-navigation .nav-next,
+.posts-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+.comment-navigation .nav-links a,
+.post-navigation .nav-links a,
+.posts-navigation .nav-links a {
+  font-size: 18px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  color: #e93348; }
+
+.comment-navigation .nav-links a:hover,
+.post-navigation .nav-links a:hover,
+.posts-navigation .nav-links a:hover {
+  color: #c42033;
+  text-decoration: none; }
+
+.comment-navigation .nav-previous a:before,
+.post-navigation .nav-previous a:before,
+.posts-navigation .nav-previous a:before {
+  content: "< ";
+  margin-right: 15px;
+  font-size: 18px; }
+
+.comment-navigation .nav-next a:after,
+.post-navigation .nav-next a:after,
+.posts-navigation .nav-next a:after {
+  content: " >";
+  margin-left: 15px;
+  font-size: 18px; }
 
 .widget .widget-title {
   font-size: 18px;
