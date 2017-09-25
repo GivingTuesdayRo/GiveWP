@@ -19,6 +19,6 @@ if ($value == 'hide') {
     </div>
 
     <div class="entry-meta">
-        <?php givingtuesday_posted_on(); ?>
+        <?php //givingtuesday_posted_on(); ?>
     </div><!-- .entry-meta -->
 </header>
