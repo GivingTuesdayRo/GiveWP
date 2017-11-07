@@ -25,7 +25,7 @@ MetaboxManager::instance()->newMetabox([
 MetaboxManager::instance()->newMetabox([
     'id' => 'page_options',
     'title' => 'Page options',
-    'postType' => 'page',
+    'postType' => ['page','initiative'],
     'context' => 'side',
     'fields' => [
         [
