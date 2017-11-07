@@ -17,6 +17,11 @@
 
     <div class="entry-content" style="<?php echo $headerStyle == 'hide' ? 'margin-top: 0' : '' ?>">
         <?php
+        if (get_post_type() == 'initiative') {
+            get_template_part('resources/templates/posts/header/details-initiative');
+        }
+        ?>
+        <?php
         the_content(sprintf(
             wp_kses(
             /* translators: %s: Name of current post. Only visible to screen readers */
