@@ -14,6 +14,7 @@
 
 
 <?php get_template_part('resources/templates/footer/top'); ?>
+<?php get_template_part('resources/templates/footer/main'); ?>
 <?php get_template_part('resources/templates/footer/bottom'); ?>
 </div><!-- #page -->
 
