@@ -49,9 +49,47 @@
 
 .comment-navigation .nav-next a:after,
 .post-navigation .nav-next a:after,
-.posts-navigation .nav-next a:after
-{
+.posts-navigation .nav-next a:after {
   content: " >";
   margin-left: 15px;
   font-size: 18px;
+}
+
+.post-loop article {
+  margin-bottom: 30px;
+
+  .entry-header {
+    margin-bottom: 15px;
+
+    .entry-meta {
+      font-size: 13px;
+    }
+  }
+
+
+  .img-wrap {
+    border: solid 1px #fff;
+    padding: 10px;
+  }
+
+  .post-thumbnail {
+    max-height: 240px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+
+  .entry-content {
+    font-size: 14px;
+    line-height: inherit;
+    p {
+      font-size: 14px;
+      line-height: inherit;
+    }
+  }
+
+  .entry-footer {
+    background: rgba(0, 0, 0, .02);
+    font-size: 13px;
+    padding: 5px 10px;
+  }
 }
