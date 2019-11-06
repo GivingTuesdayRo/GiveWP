@@ -14,7 +14,11 @@ if ($value == 'hide') {
             background: url(<?php the_post_thumbnail_url('large') ?>);
             background-repeat: no-repeat;background-size: cover;background-position: top center; ">
         <div class="banner-overlay">
-            <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+            <div class="banner-bar">
+                <div class="container">
+                    <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+                </div>
+            </div>
         </div>
     </div>
 
