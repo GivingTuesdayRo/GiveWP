@@ -16,7 +16,9 @@ get_header(); ?>
     <div id="primary" class="container content-area">
         <div class="row">
             <main id="main" class="site-main col-md-9">
-                <?php get_template_part('resources/templates/posts/index'); ?>
+                <?php
+                get_template_part('resources/templates/posts/loop', get_post_format());
+                ?>
             </main><!-- #main -->
 
             <?php get_template_part('resources/templates/sidebars/right'); ?>
