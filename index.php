@@ -18,6 +18,8 @@ get_header(); ?>
             <main id="main" class="site-main col-md-9">
                 <?php
                 get_template_part('resources/templates/posts/loop', get_post_format());
+
+                get_template_part('resources/templates/posts/navigation/pagination', get_post_format());
                 ?>
             </main><!-- #main -->
 

@@ -9,11 +9,7 @@
 
 get_header(); ?>
     <div id="primary" class="content-area">
-        <?php
-        if (has_post_thumbnail()) {
-            get_template_part('resources/templates/posts/header/banner');
-        }
-        ?>
+        <?php get_template_part('resources/templates/posts/header/header'); ?>
         <?php get_template_part('resources/templates/layouts/right-sidebar'); ?>
     </div><!-- #primary -->
 <?php

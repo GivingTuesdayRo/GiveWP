@@ -1,6 +1,5 @@
 <?php
 while (have_posts()) : the_post();
-
     get_template_part('resources/templates/posts/content/content', 'single');
 
     get_template_part('resources/templates/posts/navigation/post-navigation');

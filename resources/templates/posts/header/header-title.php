@@ -1,11 +1,4 @@
-<?php
-use GivingTuesdayWp\Library\Metabox\MetaboxManager;
-$headerStyle = MetaboxManager::instance()->getFieldValue('page_options', 'header_style');
-if ($headerStyle == 'hide') {
-    return;
-}
-?>
-<header class="entry-header">
+<div class="container">
     <?php
     if (is_singular()) :
         the_title('<h1 class="entry-title">', '</h1>');
@@ -17,6 +10,6 @@ if ($headerStyle == 'hide') {
         <div class="entry-meta">
             <?php givingtuesday_posted_on(); ?>
         </div><!-- .entry-meta -->
-        <?php
+    <?php
     endif; ?>
-</header><!-- .entry-header -->
+</div>

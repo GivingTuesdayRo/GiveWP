@@ -24,16 +24,10 @@ get_header(); ?>
 
                 <?php
                 get_template_part('resources/templates/posts/loop', get_post_format());
-                ?>
 
+                get_template_part('resources/templates/posts/navigation/pagination', get_post_format());
+                ?>
                 <?php
-                // Previous/next page navigation.
-                the_posts_pagination([
-                    'prev_text' => __('Previous page', 'twentyfifteen'),
-                    'next_text' => __('Next page', 'twentyfifteen'),
-                    'before_page_number' => '<span class="meta-nav screen-reader-text">'.__('Page',
-                            'twentyfifteen').' </span>',
-                ]);
             else :
                 get_template_part('template-parts/content', 'none');
             endif; ?>

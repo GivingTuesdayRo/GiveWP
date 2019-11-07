@@ -16,7 +16,8 @@ MetaboxManager::instance()->newMetabox([
             'value' => 'cover',
             'optionsValues' => [
                 'regular' => 'Regular',
-                'cover' => 'Cover'
+                'cover' => 'Cover',
+                'title' => 'Title'
             ]
         ]
     ]
@@ -45,7 +46,8 @@ MetaboxManager::instance()->newMetabox([
             'value' => 'regular',
             'optionsValues' => [
                 'regular' => 'Regular',
-                'cover' => 'Cover'
+                'cover' => 'Cover',
+                'title' => 'Title'
             ]
         ],
         [
