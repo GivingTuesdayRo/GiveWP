@@ -18,18 +18,25 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-    <?php if (1 == 2) { ?>
-        <a class="skip-link screen-reader-text" href="#content">
-            <?php esc_html_e('Skip to content', 'givingtuesday'); ?>
-        </a>
-    <?php } ?>
+    <header id="masthead"
+            class="site-header navbar navbar-light navbar-expand-md fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header  col col-md-3 mr-auto">
 
-    <header id="masthead" class="site-header navbar navbar-expand navbar-light d-flex justify-content-end">
-        <?php get_template_part('resources/templates/header/brand'); ?>
-        <div>
+                <div class="navbar-brand">
+                    <?php get_template_part('resources/templates/header/brand'); ?>
+                </div>
 
-            <?php get_template_part('resources/templates/header/top-navigation'); ?>
-            <?php get_template_part('resources/templates/header/main-navigation'); ?>
+                <button class="navbar-toggler ml-auto mt-3" type="button"
+                        data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse flex-column ml-lg-0 ml-3" id="navbarCollapse">
+                <?php get_template_part('resources/templates/header/top-navigation'); ?>
+                <?php get_template_part('resources/templates/header/main-navigation'); ?>
+            </div>
         </div>
     </header><!-- #masthead -->
 
