@@ -19,7 +19,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
     <header id="masthead"
-            class="site-header navbar navbar-light navbar-expand-md fixed-top">
+            class="site-header navbar navbar-light navbar-expand-md sticky-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header  col col-md-3 mr-auto">
@@ -33,7 +33,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse flex-column ml-lg-0 ml-3" id="navbarCollapse">
+            <div class="collapse navbar-collapse flex-column" id="navbarCollapse">
                 <?php get_template_part('resources/templates/header/top-navigation'); ?>
                 <?php get_template_part('resources/templates/header/main-navigation'); ?>
             </div>

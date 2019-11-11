@@ -6321,6 +6321,9 @@ header.navbar-light {
     header .navbar-brand {
       width: 70%; } }
 
+header .navbar-collapse.collapse.in {
+  display: block !important; }
+
 #top-links-menu a {
   color: #e93348;
   font-size: 14px;
