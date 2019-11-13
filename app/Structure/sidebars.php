@@ -23,9 +23,9 @@ namespace GivingTuesdayWp\Theme\Structure;
 add_action('widgets_init', function ()
 {
     register_sidebar([
-        'name' => esc_html__('Sidebar Right', 'givingtuesday'),
+        'name' => esc_html__('Sidebar Right', GIVEWP_THEME_TEXT_DOMAIN),
         'id' => 'sidebar-right',
-        'description' => esc_html__('Add widgets here.', 'givingtuesday'),
+        'description' => esc_html__('Add widgets here.', GIVEWP_THEME_TEXT_DOMAIN),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h4 class="widget-title">',
@@ -34,9 +34,9 @@ add_action('widgets_init', function ()
 
     foreach ([1,2,3,4] as $item) {
         register_sidebar([
-            'name' => esc_html__('Footer ' . $item, 'givingtuesday'),
+            'name' => esc_html__('Footer ' . $item, GIVEWP_THEME_TEXT_DOMAIN),
             'id' => 'footer-' . $item,
-            'description' => esc_html__('Add widgets here.', 'givingtuesday'),
+            'description' => esc_html__('Add widgets here.', GIVEWP_THEME_TEXT_DOMAIN),
             'before_widget' => '<section id="%1$s" class="widget %2$s">',
             'after_widget' => '</section>',
             'before_title' => '<h4 class="widget-title">',

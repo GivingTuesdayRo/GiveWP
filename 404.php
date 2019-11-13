@@ -7,54 +7,39 @@
  * @package GivingTuesday
  */
 
-get_header(); ?>
+get_header();
+?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+    <div id="primary" class="container content-area">
+        <div id="post-not-found" class="jumbotron ">
+            <header>
+                <div class="hero-unit">
+                    <h1><?php _e("Epic 404 - Article Not Found", GIVEWP_THEME_TEXT_DOMAIN); ?></h1>
+                    <p><?php _e("This is embarassing. We can't find what you were looking for.",
+                            GIVEWP_THEME_TEXT_DOMAIN); ?></p>
+                </div>
+            </header> <!-- end article header -->
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'givingtuesday' ); ?></h1>
-				</header><!-- .page-header -->
+            <section class="post_content">
+                <p>
+                    <?php _e("Whatever you were looking for was not found, but maybe try looking again or search using the form below.",
+                        GIVEWP_THEME_TEXT_DOMAIN); ?>
+                </p>
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'givingtuesday' ); ?></p>
+                <div class="row">
+                    <div class="col col-lg-12">
+                        <?php get_search_form(); ?>
+                    </div>
+                </div>
 
-					<?php
-						get_search_form();
+            </section> <!-- end article section -->
 
-						the_widget( 'WP_Widget_Recent_Posts' );
-					?>
+            <footer>
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'givingtuesday' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
+            </footer> <!-- end article footer -->
 
-					<?php
-
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'givingtuesday' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-
-						the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+        </div> <!-- end article -->
+    </div><!-- #primary -->
 
 <?php
 get_footer();

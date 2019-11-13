@@ -1,6 +1,7 @@
 <?php
 
 define('GIVEWP_THEME_DIR', dirname(__DIR__));
+define('GIVEWP_THEME_TEXT_DOMAIN', 'givingtuesday');
 
 // REGISTER AUTOLOADER
 require_once GIVEWP_THEME_DIR.'/Library/Autoload/Autoload.php';

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * GivingTuesday functions and definitions
  *
@@ -16,7 +17,6 @@
 
 
 $theme = require_once __DIR__ . '/bootstrap/theme.php';
-
 
 use function GivingTuesdayWp\asset_path;
 

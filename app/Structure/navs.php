@@ -20,9 +20,9 @@ namespace GivingTuesdayWp\Theme\Structure;
 function register_navigation_areas()
 {
     register_nav_menus([
-        'top-navigation' => esc_html__('Top Navigation', 'givingtuesday'),
-        'primary' => esc_html__('Primary Navigation', 'givingtuesday'),
-        'footer' => esc_html__('Footer Navigation', 'givingtuesday'),
+        'top-navigation' => esc_html__('Top Navigation', GIVEWP_THEME_TEXT_DOMAIN),
+        'primary' => esc_html__('Primary Navigation', GIVEWP_THEME_TEXT_DOMAIN),
+        'footer' => esc_html__('Footer Navigation', GIVEWP_THEME_TEXT_DOMAIN),
     ]);
 }
 

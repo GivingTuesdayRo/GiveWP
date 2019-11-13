@@ -19,7 +19,7 @@
         the_content();
 
         wp_link_pages([
-            'before' => '<div class="page-links">' . esc_html__('Pages:', 'givingtuesday'),
+            'before' => '<div class="page-links">' . esc_html__('Pages:', GIVEWP_THEME_TEXT_DOMAIN),
             'after' => '</div>',
         ]);
         ?>
@@ -32,7 +32,7 @@
                 sprintf(
                     wp_kses(
                     /* translators: %s: Name of current post. Only visible to screen readers */
-                        __('Edit <span class="screen-reader-text">%s</span>', 'givingtuesday'),
+                        __('Edit <span class="screen-reader-text">%s</span>', GIVEWP_THEME_TEXT_DOMAIN),
                         [
                             'span' => [
                                 'class' => [],
