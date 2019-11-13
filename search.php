@@ -8,22 +8,23 @@
  */
 
 get_header(); ?>
+    <header class="entry-header entry-<?php echo $pageType ?> entry-header-title">
+        <div class="container">
+            <h1 class="entry-title">
+                <?php
+                /* translators: %s: search query. */
+                printf(
+                    esc_html__('Search Results for: %s', GIVEWP_THEME_TEXT_DOMAIN),
+                    '<span>'.get_search_query().'</span>'
+                );
+                ?>
+            </h1>
+        </div>
+    </header><!-- .page-header -->
 
     <section id="primary" class="container content-area">
         <?php
         if (have_posts()) : ?>
-
-            <header class="page-header">
-                <h1 class="page-title">
-                    <?php
-                    /* translators: %s: search query. */
-                    printf(
-                        esc_html__('Search Results for: %s', GIVEWP_THEME_TEXT_DOMAIN),
-                        '<span>'.get_search_query().'</span>'
-                    );
-                    ?>
-                </h1>
-            </header><!-- .page-header -->
 
             <?php
             get_template_part('resources/templates/posts/loop');
