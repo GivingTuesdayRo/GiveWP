@@ -57,7 +57,11 @@ foreach ($initiativeFields as $field => $optionName) {
         </td>
     </tr>
     <tr>
-        <td><strong>Cand:</strong></td>
+        <td>
+            <strong>
+                <?php echo __('When', 'give'); ?>:
+            </strong>
+        </td>
         <td>
             <?php echo $initiativeValues['initiative_date']; ?>
         </td>
@@ -70,7 +74,7 @@ foreach ($initiativeFields as $field => $optionName) {
     </tr>
     <?php if ($initiativeValues['contact_public'] == 'yes') { ?>
         <tr>
-            <td rowspan="2"><strong>Persoana de contact:</strong></td>
+            <td rowspan="2"><strong>Persoană de contact:</strong></td>
             <td rowspan="2">
                 <?php echo $initiativeValues['contact_name']; ?>
             </td>

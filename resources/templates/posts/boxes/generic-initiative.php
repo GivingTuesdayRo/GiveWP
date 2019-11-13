@@ -20,7 +20,7 @@
             </a>
         </div><!-- .post-thumbnail -->
     <?php endif; ?>
-    
+
     <header class="entry-header">
         <?php
         if (is_singular()) :
@@ -30,7 +30,8 @@
         endif;
         ?>
         <div class="entry-meta">
-            Cand: <?php echo get_post_meta(get_the_ID(), 'givewp_initiative_options_initiative_date', true); ?>
+            <?php echo __('When', 'give'); ?>:
+            <?php echo get_post_meta(get_the_ID(), 'givewp_initiative_options_initiative_date', true); ?>
         </div><!-- .entry-meta -->
     </header><!-- .entry-header -->
 
