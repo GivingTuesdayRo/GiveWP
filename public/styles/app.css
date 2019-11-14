@@ -6475,10 +6475,6 @@ footer#bottom-colophon .design-by a {
 body .entry-content .btn {
   margin-bottom: 15px; }
 
-body p, body ul li {
-  font-size: 18px;
-  line-height: 28px; }
-
 body.single .entry-content h2 {
   line-height: 42px; }
 
@@ -6516,8 +6512,7 @@ body.single .entry-content h2 {
       .banner-picture .banner-overlay .banner-bar .entry-title {
         color: #fff;
         font-weight: 600;
-        font-size: 36px !important;
-        margin-top: 35px; }
+        font-size: 36px !important; }
   @media only screen and (max-width: 992px) {
     .banner-picture {
       padding-bottom: 50%; }
@@ -6546,12 +6541,17 @@ header.entry-header-title {
     line-height: 78px;
     font-size: 55px !important; }
 
+header.entry-header-regular .banner-overlay .banner-bar .entry-title {
+  margin-top: 35px; }
+
 header.entry-header-cover .banner-picture .banner-overlay {
-  background: rgba(0, 0, 0, 0.22); }
+  background: rgba(0, 0, 0, 0.4); }
   header.entry-header-cover .banner-picture .banner-overlay .banner-bar {
     text-align: center;
     background: none;
-    top: 50%; }
+    top: 40%; }
+    header.entry-header-cover .banner-picture .banner-overlay .banner-bar .entry-title {
+      font-size: 50px !important; }
 
 .comment-content:after, .comment-content:before, .entry-content:after, .entry-content:before, .site-content:after, .site-content:before, .site-footer:after, .site-footer:before, .site-header:after, .site-header:before {
   content: "";

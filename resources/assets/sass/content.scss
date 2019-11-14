@@ -8,8 +8,6 @@ body .entry-content .btn {
 }
 
 body p, body ul li {
-  font-size: 18px;
-  line-height: 28px
 }
 
 body.single .entry-content h2 {
@@ -58,7 +56,6 @@ body.single .entry-content h2 {
         color: #fff;
         font-weight: 600;
         font-size: 36px !important;
-        margin-top: 35px;
       }
     }
   }
@@ -106,15 +103,32 @@ header.entry-header-title {
   }
 }
 
+header.entry-header-regular {
+
+  .banner-overlay {
+
+    .banner-bar {
+
+      .entry-title {
+        margin-top: 35px;
+      }
+    }
+  }
+}
+
 header.entry-header-cover {
   .banner-picture {
     .banner-overlay {
-      background: rgba(0, 0, 0, .22);
+      background: rgba(0, 0, 0, .4);
 
       .banner-bar {
         text-align: center;
         background: none;
-        top: 50%;
+        top: 40%;
+
+        .entry-title {
+          font-size: 50px !important;
+        }
       }
     }
   }
