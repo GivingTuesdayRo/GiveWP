@@ -24,10 +24,13 @@ get_header(); ?>
 
                 <?php
                 get_template_part('resources/templates/posts/loop', get_post_format());
-
-                get_template_part('resources/templates/posts/navigation/pagination', get_post_format());
                 ?>
-                <?php
+                <div class="container">
+                    <?php
+                    get_template_part('resources/templates/posts/navigation/pagination', get_post_format());
+                    ?>
+                </div>
+            <?php
             else :
                 get_template_part('template-parts/content', 'none');
             endif; ?>
