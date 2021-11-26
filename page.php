@@ -19,12 +19,13 @@ if (metadata_exists('post', $pageId, $metaName)) {
     $layout = get_post_meta($pageId, $metaName, true);
 }
 get_header(); ?>
-    <div id="primary" class="content-area">
+    <div id="primary" class="content-area layout-<?= $layout; ?>">">
         <?php get_template_part('resources/templates/posts/header/header'); ?>
         <?php
         switch ($layout) {
             case 'right-sidebar':
             case 'full-width':
+            case 'container':
                 $layoutTemplate = $layout;
                 break;
             default:

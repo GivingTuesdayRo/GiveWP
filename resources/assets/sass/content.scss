@@ -55,7 +55,7 @@ body.single .entry-content h2 {
       .entry-title {
         color: #fff;
         font-weight: 600;
-        font-size: 36px !important;
+        font-size: 3rem !important;
       }
     }
   }
@@ -65,8 +65,7 @@ body.single .entry-content h2 {
     padding-bottom: 50%;
 
     .banner-overlay .banner-bar .entry-title {
-      font-size: 35px !important;
-      line-height: 50px
+      font-size: 2rem !important;
     }
 
   }
@@ -75,8 +74,7 @@ body.single .entry-content h2 {
     padding-bottom: 60%;
 
     .banner-overlay .banner-bar .entry-title {
-      font-size: 24px !important;
-      line-height: 35px
+      font-size: 1.5rem !important;
     }
   }
 
@@ -84,8 +82,7 @@ body.single .entry-content h2 {
     padding-bottom: 60%;
 
     .banner-overlay .banner-bar .entry-title {
-      font-size: 16px !important;
-      line-height: 18px
+      font-size: 1rem !important;
     }
   }
 }
@@ -98,17 +95,13 @@ header.entry-header-title {
   .entry-title {
     color: #fff;
     font-weight: 400;
-    line-height: 78px;
     font-size: 55px !important;
   }
 }
 
 header.entry-header-regular {
-
   .banner-overlay {
-
     .banner-bar {
-
       .entry-title {
         margin-top: 35px;
       }
@@ -127,7 +120,7 @@ header.entry-header-cover {
         top: 40%;
 
         .entry-title {
-          font-size: 50px !important;
+          font-size: 3rem !important;
         }
       }
     }

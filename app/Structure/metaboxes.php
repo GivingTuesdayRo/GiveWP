@@ -26,7 +26,7 @@ MetaboxManager::instance()->newMetabox([
 MetaboxManager::instance()->newMetabox([
     'id' => 'page_options',
     'title' => 'Page options',
-    'postType' => ['page','initiative'],
+    'postType' => ['page', 'initiative'],
     'context' => 'side',
     'fields' => [
         [
@@ -56,8 +56,9 @@ MetaboxManager::instance()->newMetabox([
             'type' => 'radioGroup',
             'value' => 'right-sidebar',
             'optionsValues' => [
+                'full-width' => 'Full Width',
+                'container' => 'Container width',
                 'right-sidebar' => 'Right Sidebar',
-                'full-width' => 'Full Width'
             ]
         ]
     ]
