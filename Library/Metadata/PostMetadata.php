@@ -31,7 +31,7 @@ class PostMetadata
      * @param $meta_key
      * @return mixed|null
      */
-    protected function fetchValue($meta_type, $object_id, $meta_key)
+    protected static function fetchValue($meta_type, $object_id, $meta_key)
     {
         if (metadata_exists('post', $object_id, $meta_key)) {
             return get_post_meta($object_id, $meta_key, true);
