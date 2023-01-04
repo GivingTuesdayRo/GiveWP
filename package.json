@@ -69,7 +69,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "jquery": "^3.6.0",
+    "jquery": "^3.6.2",
     "popper.js": "^1.11.0"
   },
   "devDependencies": {
