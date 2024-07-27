@@ -68,7 +68,7 @@
     "build:production": "webpack --progress -p --config build/webpack.config.js"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^5.0.0",
     "jquery": "^3.6.0",
     "popper.js": "^1.11.0"
   },
